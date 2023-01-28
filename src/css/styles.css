@@ -1,0 +1,145 @@
+body{    
+    background-image: url(../imagens/background-neon.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    
+}
+
+.cartao{
+    width: 400px;
+    border-radius: 10px;
+    background-color: #070b12;
+    border: 2px solid #e126d9;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cartao .minhas-informacoes img{
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #e126d9;
+    margin-top: 10px;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 30px;
+    margin-top: 5px;
+    color: #b7bac5;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: #c5b8b8;
+    margin-bottom: 10px;
+}
+
+.cartao .conteudo .abas {
+    display: flex;
+}
+.cartao .conteudo .abas img{
+    width: 30px;
+    
+}
+
+.cartao .conteudo .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .conteudo .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.cartao .conteudo .abas .aba:hover{
+    background-color: #414141;
+
+}
+
+.cartao .conteudo .informacoes-abas .informacao{
+    background-color: #262626;
+    padding: 15px 15px;
+    min-height: 260px;
+    display: none;
+}
+
+.cartao .conteudo .informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.cartao .conteudo .informacoes-abas .informacao .sub-titulo{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.cartao .conteudo .informacoes-abas .informacao .descricao{
+    overflow-y: auto;
+    font-size: 20px;
+    max-height: 240px;
+    padding-right: 10px;
+}
+
+.descricao span{
+    color: #02d08f;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.redes-sociais li a{
+    width: 250px;
+    background-color: #414141;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.3s;
+    
+    font-weight: bold;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo{
+    background-color: #06c185;
+}
+
+.redes-sociais .github{
+    background-color: #1d87bd;
+}
+
+.redes-sociais .linkedin{
+    background-color: #545454;    
+}
+
+.redes-sociais .projetos{
+    background-color: #b3ff00c2;
+}
+
